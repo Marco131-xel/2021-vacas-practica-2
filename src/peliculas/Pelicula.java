@@ -43,7 +43,7 @@ public class Pelicula{
     }
 
     public String getContar(){
-        String prueba = "Id: "+id+" || Categoria: "+categoria+" || Nombre de la pelicula: "+nombre+" // Anio: " +anio;
+        String prueba = "Id: "+id+" || Categoria: "+categoria+" || Nombre: "+nombre+" // Anio: " +anio;
         return prueba;
     }
 

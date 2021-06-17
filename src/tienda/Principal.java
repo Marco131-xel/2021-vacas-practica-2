@@ -17,13 +17,15 @@ public class Principal {
         int menu = 0;
 
         while(menu >= 0){
-            System.out.println("Bienvenido a memorabilia \n\n");
+            System.out.print("");
+            System.out.println("\n\n *****Bienvenido a memorabilia****** \n\n");
             System.out.println("1) Ingreso de clientes");
             System.out.println("2) Mostrar clientes");
             System.out.println("3) Ordenar Clientes Ascente");
             System.out.println("4) Ordenar Clientes Descendente");
             System.out.println("5) Ingresar peliculas");
             System.out.println("6) Mostrar peliculas");
+            System.out.println("7) Mostrar peliculas Ordenadas");
             System.out.println("-1) Salir");
             System.out.println("\n");
             menu = IngresoDatos.getEntero("Ingrese la opción ", true);
@@ -56,6 +58,11 @@ public class Principal {
                 tablaPeliculas.agregarPelicula();
             }
             if (menu == 6){
+                tablaPeliculas.mostrarPeliculas();
+            }
+            if (menu == 7){
+                System.out.println("Ordenado");
+                tablaPeliculas.ordenarPeliculas(true);
                 tablaPeliculas.mostrarPeliculas();
             }
 
